@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+
+.header_box{width: 1280px; margin:0 auto;}
+.header{width: 1280px; margin:0 auto;}
+.header:after{content:''; display: block; clear: both;}
+.header .nav:after{content:''; display: block; clear: both;}
+.header .nav{float:right; margin-top:35px;}
+.header .nav li{float:left; font-size:20px; margin-right:50px; letter-spacing: -1px}
+.header .nav li a{color:#fff;}
+.header .nav li a:hover{opacity: 0.5;}

@@ -1,0 +1,81 @@
+<? include "../inc/loginCheck.php";?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GGMT2019</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript">   
+$(document).ready( function() { 
+$("#header").load("../inc/header02.html");  
+$("#footer").load("../inc/footer.html");
+}); 
+</script>
+<link rel="stylesheet" type="text/css" href="../css/default.css">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<?
+
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
+$random_str =generateRandomString(20);
+
+			include("../../function/dbconn.php"); 
+			$query_cnt = "SELECT count(*) from abstract WHERE user_id='$_SESSION[user_id]'";
+			$result_cnt=mysqli_query($con,$query_cnt) or die (mysqli_error($con));
+
+			$data_cnt=mysqli_fetch_row($result_cnt); //위 결과 값을 하나하나 배열로 저장
+			$total_no=$data_cnt[0];//배열 첫번째 요소값, 테이블의 전체 글수 저장
+?>
+
+
+<body>
+	<div id="wrap">
+		<div id="header">
+		</div><!--header-->
+        <div class="sub sub04">
+            <div class="sub_txt_bg">
+                <div class="sub_txt_box">
+                    <P>Modify Information and Abstract submission</P>
+                </div>
+            </div>
+        </div>
+        <div class="sub_content">
+           <div id="sub04_txt_box01">
+             <ul>
+                 <li>After registration, you can get an approval/denial email.</li>
+                 <li>When the registration is denied, please contact to <span>nimsgaw@korea.kr</span> </li>
+                 <li>Only person who get an approval can submit the abstract with its own ID and Password.</li>
+                  <li>· Deadlines
+                     <ul>
+                      <li>April 2019 Registration and abstract submission opens</li>
+                      <li>9 June 2019 Deadline for abstract submissions </li>
+                      <li>7 July 2019 Deadline for registration</li>
+                    </ul>
+                  </li>
+              </ul>
+              <ul>
+                  <li>· Modify Member Information</li>
+                  <li><a href="modify.html?code=<?=$code?>">Click</a></li>
+              </ul>
+               <ul>
+                  <li>· Abstract submission</li>
+                  <li><?if ($total_no > 0){?><a href="abstract_modify.html?code=<?=$code?>"><?}else{?><a href="abstract.html?code=<?=$code?>"><?}?>Click</a></li>
+              </ul>
+           </div>
+        </div>
+		<div id="footer">
+		</div><!--footer-->
+	</div><!--wrap-->
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Dal`s portfolio</title>
+    <script src="js/jquery-2.1.4.js"></script>
+    <!--velocity-->
+    <script src="velocity/modernizr.js"></script>
+    <script src="velocity/velocity.min.js"></script>
+    <script src="velocity/velocity.ui.min.js"></script>
+    <script src="velocity/main.js"></script>
+    <link rel="stylesheet" href="velocity/velocity.css">
+    <!-- slick js & css -->
+    <script src="js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <!--Smooth Scrolling ie에서도 작동함 -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <!-- featherlight -->
+    <script src="js/featherlight/featherlight.js"></script>
+    <link rel="stylesheet" href="js/featherlight/featherlight.css">
+    <!--custom js & css-->
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+
+<body data-hijacking="on" data-animation="fixed">
+    <div class="container">
+        <section class="cd-section visible" id="home">
+            <div class="content">
+                <div class="vs">
+                    <div class="home-ani">
+                        <div class="welcome-img"><img src="./images/loading-img.png" alt=""></div>
+                        <div class="bar-box">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="vs-box">
+                        <div class="vs-txt-inner">
+                            <div class="vs-big-txt">
+                                <p>안녕하세요.👀</p>
+                                <p class="green-txt">저는 김달영입니다.</p>
+                            </div>
+                            <div class="vs-sm-txt">
+                                <p>배움을 게을리하지 않는, 코딩을 사랑하는,</p>
+                                <p><span class="green-txt">웹퍼블리셔</span>가 되겠습니다.</p>
+                            </div>
+                            <button class="btn-cotact"
+                                onclick="window.open('https://github.com/kimbang1219/dal-portfolio-site')">GitHub
+                                바로가기</button>
+                        </div>
+                        <!--vs-txt-inner-->
+                        <div class="vs-img">
+                            <img src="images/people_img.png" alt="">
+                        </div>
+                        <!--vs-img-->
+                    </div>
+                    <!--vs-box-->
+                </div>
+                <!--vs-->
+            </div>
+        </section>
+
+        <section class="cd-section" id="about">
+            <div class="content">
+                <div class="about">
+                    <div class="about-box">
+                        <div class="about-img-box">
+                            <div class="about-img">
+                                <img src="images/human_img.png" alt="">
+                            </div>
+                            <div class="about-icon">
+                                <img src="images/icon01.png" alt="">
+                                <img src="images/icon02.png" alt="">
+                                <img src="images/icon03.png" alt="">
+                            </div>
+                        </div>
+                        <div class="about-info">
+                            <div class="about-info-item">
+                                <p class="about-item-tit">소개</p>
+                                <ul class="about-item-txt">
+                                    <li>김달영 / 서울시 강북구 거주</li>
+                                    <li>1992. 12. 19 출생 👶</li>
+                                    <li>ekfdud79@naver.com</li>
+                                    <li>010-4464-2437</li>
+                                </ul>
+                            </div>
+                            <div class="about-info-item">
+                                <p class="about-item-tit">경력</p>
+                                <ul class="about-item-txt">
+                                    <li>2018. 03 ~ 2020. 06 (2년 3개월)</li>
+                                    <li>사람과 인터넷 웹 에이전시</li>
+                                    <li>웹디자이너로 근무 [디자인+코딩]</li>
+                                    <li>2017. 07 ~ 2018. 01 (6개월)</li>
+                                    <li>웹퍼블리셔 양성 과정 수료 [학원]</li>
+                                </ul>
+                            </div>
+                            <div class="about-info-item">
+                                <p class="about-item-tit">자격증</p>
+                                <ul class="about-item-txt">
+                                    <li>정보처리기사 📚</li>
+                                    <li>웹디자인 기능사</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--about-box-->
+                </div>
+                <!--about-->
+            </div>
+        </section>
+
+        <section class="cd-section" id="work">
+            <div class="content">
+                <div class="work">
+                    <div class="work-box">
+                        <div class="work-slider">
+                            <div class="work-info">
+                                <div class="work-item-box">
+                                    <img src="./images/work-img07.png" alt="">
+                                    <div class="work-info-txt">
+                                        <div class="work-info-box">
+                                            <img src="./images/emo.png" alt="" class="emo">
+                                            <h3>자바스크립트로 만든 숫자 게임</h3>
+                                            <p>디자인:100%, 퍼블리싱:100%</p>
+                                            <a href="https://dalyoung-number-game.netlify.app" class="work-btn"
+                                                data-featherlight="iframe">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <div class="work-item-box">
+                                    <img src="./images/work-img08.png" alt="">
+                                    <div class="work-info-txt">
+                                        <div class="work-info-box">
+                                            <img src="./images/emo.png" alt="" class="emo">
+                                            <h3>자바스크립트로 만든 할 일 목록</h3>
+                                            <p>디자인:100%, 퍼블리싱:100%</p>
+                                            <a href="https://dal-project-todolist.netlify.app" class="work-btn"
+                                                data-featherlight="iframe">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <div class="work-item-box">
+                                    <img src="./images/work-img01.png" alt="">
+                                    <div class="work-info-txt">
+                                        <div class="work-info-box">
+                                            <img src="./images/emo.png" alt="" class="emo">
+                                            <h3>LH 분양홈페이지 (PC시안제작)</h3>
+                                            <p>디자인:100%</p>
+                                            <a href="./linkPage/port01/index.html" class="work-btn"
+                                                data-featherlight="iframe">자세히보기</a>
+                                            <a href="void(0)" onclick="alert('PC에서 보시길 권장드립니다.'); return false;"
+                                                class="work-btn-m">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <div class="work-item-box">
+                                    <img src="./images/work-img02.png" alt="">
+                                    <div class="work-info-txt">
+                                        <div class="work-info-box">
+                                            <img src="./images/emo.png" alt="" class="emo">
+                                            <h3>LH 분양홈페이지 (PC시안제작)</h3>
+                                            <p>디자인:100% , 퍼블리싱:100%</p>
+                                            <a href="./linkPage/port02/index.html" class="work-btn"
+                                                data-featherlight="iframe">자세히보기</a>
+                                            <a href="void(0)" onclick="alert('PC에서 보시길 권장드립니다.'); return false;"
+                                                class="work-btn-m">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <div class="work-item-box">
+                                    <img src="./images/work-img03.png" alt="">
+                                    <div class="work-info-txt">
+                                        <div class="work-info-box">
+                                            <img src="./images/emo.png" alt="" class="emo">
+                                            <h3>나노코 홈페이지 제작 [부트스트랩]</h3>
+                                            <p>디자인:100% , 퍼블리싱:100%</p>
+                                            <a href="./linkPage/2019_N/index.html" class="work-btn"
+                                                data-featherlight="iframe">자세히보기</a>
+                                            <a href="http://www.nanokor.com/2019_N/index.html" class="work-btn-m"
+                                                data-featherlight="iframe">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <div class="work-item-box">
+                                    <img src="./images/work-img04.png" alt="">
+                                    <div class="work-info-txt">
+                                        <div class="work-info-box">
+                                            <img src="./images/emo.png" alt="" class="emo">
+                                            <h3>기상청 이벤트 홈페이지</h3>
+                                            <p>디자인:100% , 퍼블리싱:100%</p>
+                                            <a href="./linkPage/ggmt2019/index.html" class="work-btn"
+                                                data-featherlight="iframe">자세히보기</a>
+                                            <a href="void(0)" onclick="alert('PC에서 보시길 권장드립니다.'); return false;"
+                                                class="work-btn-m">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <div class="work-item-box">
+                                    <img src="./images/work-img05.png" alt="">
+                                    <div class="work-info-txt">
+                                        <div class="work-info-box">
+                                            <img src="./images/emo.png" alt="" class="emo">
+                                            <h3>일본 디자인 공모전 (PC시안제작)</h3>
+                                            <p>디자인:100%</p>
+                                            <a href="./linkPage/port05/index.html" class="work-btn"
+                                                data-featherlight="iframe">자세히보기</a>
+                                            <a href="void(0)" onclick="alert('PC에서 보시길 권장드립니다.'); return false;"
+                                                class="work-btn-m">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="work-info">
+                                <div class="work-item-box">
+                                    <img src="./images/work-img06.png" alt="">
+                                    <div class="work-info-txt">
+                                        <div class="work-info-box">
+                                            <img src="./images/emo.png" alt="" class="emo">
+                                            <h3>일본 디자인 공모전 (PC시안제작)</h3>
+                                            <p>디자인:100%</p>
+                                            <a href="./linkPage/port06/index.html" class="work-btn"
+                                                data-featherlight="iframe">자세히보기</a>
+                                            <a href="void(0)" onclick="alert('PC에서 보시길 권장드립니다.'); return false;"
+                                                class="work-btn-m">자세히보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--work-box-->
+                </div>
+                <!--work-->
+            </div>
+        </section>
+
+        <section class="cd-section" id="contact">
+            <div class="content">
+                <div class="contact">
+                    <div class="snow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536"
+                            preserveAspectRatio="xMidYMax slice">
+                            <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
+                                <g id="snow-bottom-layer">
+                                    <ellipse cx="6" cy="1009.5" rx="6" ry="5.5" />
+                                    <ellipse cx="138" cy="1110.5" rx="6" ry="5.5" />
+                                    <ellipse cx="398" cy="1055.5" rx="6" ry="5.5" />
+                                    <ellipse cx="719" cy="1284.5" rx="6" ry="5.5" />
+                                    <ellipse cx="760" cy="1155.5" rx="6" ry="5.5" />
+                                    <ellipse cx="635" cy="1459.5" rx="6" ry="5.5" />
+                                    <ellipse cx="478" cy="1335.5" rx="6" ry="5.5" />
+                                    <ellipse cx="322" cy="1414.5" rx="6" ry="5.5" />
+                                    <ellipse cx="247" cy="1234.5" rx="6" ry="5.5" />
+                                    <ellipse cx="154" cy="1425.5" rx="6" ry="5.5" />
+                                    <ellipse cx="731" cy="773.5" rx="6" ry="5.5" />
+                                    <ellipse cx="599" cy="874.5" rx="6" ry="5.5" />
+                                    <ellipse cx="339" cy="819.5" rx="6" ry="5.5" />
+                                    <ellipse cx="239" cy="1004.5" rx="6" ry="5.5" />
+                                    <ellipse cx="113" cy="863.5" rx="6" ry="5.5" />
+                                    <ellipse cx="102" cy="1223.5" rx="6" ry="5.5" />
+                                    <ellipse cx="395" cy="1155.5" rx="6" ry="5.5" />
+                                    <ellipse cx="826" cy="943.5" rx="6" ry="5.5" />
+                                    <ellipse cx="626" cy="1054.5" rx="6" ry="5.5" />
+                                    <ellipse cx="887" cy="1366.5" rx="6" ry="5.5" />
+                                    <ellipse cx="6" cy="241.5" rx="6" ry="5.5" />
+                                    <ellipse cx="138" cy="342.5" rx="6" ry="5.5" />
+                                    <ellipse cx="398" cy="287.5" rx="6" ry="5.5" />
+                                    <ellipse cx="719" cy="516.5" rx="6" ry="5.5" />
+                                    <ellipse cx="760" cy="387.5" rx="6" ry="5.5" />
+                                    <ellipse cx="635" cy="691.5" rx="6" ry="5.5" />
+                                    <ellipse cx="478" cy="567.5" rx="6" ry="5.5" />
+                                    <ellipse cx="322" cy="646.5" rx="6" ry="5.5" />
+                                    <ellipse cx="247" cy="466.5" rx="6" ry="5.5" />
+                                    <ellipse cx="154" cy="657.5" rx="6" ry="5.5" />
+                                    <ellipse cx="731" cy="5.5" rx="6" ry="5.5" />
+                                    <ellipse cx="599" cy="106.5" rx="6" ry="5.5" />
+                                    <ellipse cx="339" cy="51.5" rx="6" ry="5.5" />
+                                    <ellipse cx="239" cy="236.5" rx="6" ry="5.5" />
+                                    <ellipse cx="113" cy="95.5" rx="6" ry="5.5" />
+                                    <ellipse cx="102" cy="455.5" rx="6" ry="5.5" />
+                                    <ellipse cx="395" cy="387.5" rx="6" ry="5.5" />
+                                    <ellipse cx="826" cy="175.5" rx="6" ry="5.5" />
+                                    <ellipse cx="626" cy="286.5" rx="6" ry="5.5" />
+                                    <ellipse cx="887" cy="598.5" rx="6" ry="5.5" />
+                                </g>
+                            </g>
+                            <g fill="#FFF" fill-opacity=".3" transform="translate(65 63)">
+                                <g id="snow-top-layer">
+                                    <circle cx="8" cy="776" r="8" />
+                                    <circle cx="189" cy="925" r="8" />
+                                    <circle cx="548" cy="844" r="8" />
+                                    <circle cx="685" cy="1115" r="8" />
+                                    <circle cx="858" cy="909" r="8" />
+                                    <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)" />
+                                    <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)" />
+                                    <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)" />
+                                    <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)" />
+                                    <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)" />
+                                    <circle cx="8" cy="8" r="8" />
+                                    <circle cx="189" cy="157" r="8" />
+                                    <circle cx="548" cy="76" r="8" />
+                                    <circle cx="685" cy="347" r="8" />
+                                    <circle cx="858" cy="141" r="8" />
+                                    <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)" />
+                                    <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)" />
+                                    <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)" />
+                                    <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)" />
+                                    <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="contact-box">
+                        <img src="./images/contact_img.png" alt="">
+                        <ul class="contact-info">
+                            <li>010-4464-2437</li>
+                            <li>ekfdud79@naver.com</li>
+                        </ul>
+                        <ul class="contact-btn">
+                            <li><a href="dal-portfolio.pdf" target="_blank">포트폴리오 PDF</a></li>
+                            <li><a href="https://github.com/kimbang1219/dal-portfolio-site" target="_blank">GitHub
+                                    바로가기</a></li>
+                        </ul>
+                        <div class="footer">
+                            <img src="./images/logo.png" alt="">
+                            <p>© 2022 Dal young. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <header>
+            <div class="gnb-inner">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="gnb">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--container-->
+    <nav>
+        <ul class="cd-vertical-nav">
+            <li><a href="#0" class="cd-prev inactive">Next</a></li>
+            <li><a href="#0" class="cd-next">Prev</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

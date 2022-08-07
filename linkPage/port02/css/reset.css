@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {font-family: 'NanumSquare', sans-serif,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
+
+/* 폰트 스타일 초기화 */
+em,address {font-style: normal;}
+
+/* 블릿기호 초기화 */
+ul,li,ol {list-style:none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+
+/* 테두리 초기화 */
+img,fieldset {border:0 none;}
+
+/* 버튼 초기화 */
+button {border: 0;}
+
+/* 반응형 */
+/*video,img {width: 100%;}*/
+
+
+
+/* IR 효과 */
+.ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+
+/* margin & padding */
+
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt20{padding-top:20px;}
+.pt30{padding-top:30px;}
+.pt40{padding-top:40px;}
+.pt50{padding-top:50px;}
+
+
+.pb5{padding-bottom: 5px;}
+.pb10{padding-bottom: 10px;}
+.pb20{padding-bottom: 20px;}
+.pb25{padding-bottom: 25px;}
+.pb30{padding-bottom: 30px;}
+.pb40{padding-bottom: 40px;}
+.pb50{padding-bottom: 50px;}
+.pb60{padding-bottom: 60px;}
+.pb70{padding-bottom: 70px;}
+.pb80{padding-bottom: 80px;}
+
+#pl130{padding-left:50px;}
+#pl_none{padding-left:0;}
+.mr_none{margin-right:0!important;}
+.pl132{padding-left:132px;}
+.mt180{margin-top:180px;}
+.mt80{margin-top:80px;}
+
+
+.footer{width: 100%; min-width: 1280px; height: 180px; margin:0 auto; background:#2d2c2c; margin-top:70px;}
+.footer_box{width: 1280px; margin:0 auto; padding-top: 50px;}
+.footer_box:after{content:''; display: block; clear: both;}
+.f_logo:after{content:''; display: block; clear: both;}
+.f_logo{float:left;}
+.f_logo>a{background:url(../images/f_logo.png) no-repeat; width: 100px; height: 67px;}
+.footer_nav{margin:0 auto; width: 900px; color:#fff;}
+.footer_nav:after{content:'';display: block; clear: both;}
+.f_navi:after{content:'';display: block; clear: both;}
+.f_navi{height: 20px; margin-bottom: 15px;}
+.f_navi li{float:left; font-size:16px; margin-right:30px;}
+.f_navi li a{color:#fff;}
+
+.address:after{content:''; display: block; clear: both;}
+.address li{font-size:24px; float:left; margin-right:25px;}

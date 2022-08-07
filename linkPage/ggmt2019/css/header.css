@@ -1,0 +1,19 @@
+.wrap{width:100%; min-width:1200px;}
+#top_logo{width:1200px; height:140px; margin:0 auto; position: relative;}
+#top_logo>h1>a{background:url(../images/ggmt_logo.png) no-repeat ; width:354px; height:54px; text-indent: -9999px; position: absolute;
+top:65%; left:40%; margin:-50px 0 0 -50px; display: block;}
+#top_logo>p>a{background:url(../images/right_logo.png) no-repeat; width:220px; height:64px; position: absolute; right:0; top:38px; text-indent: -9999px; display: block;}
+#top_logo>ul{width:210px; position: absolute; left:0; top:32px;}
+#top_logo>ul:after{content:''; display: block; clear: both;}
+#top_logo>ul>li{width:65px; height:80px; text-indent: -9999px; float: left; margin-right:5px;}
+#top_logo>ul>li:first-child{background:url(../images/wmo_icon.png) no-repeat;}
+#top_logo>ul>li:nth-of-type(2){background:url(../images/gaw_icon.png) no-repeat;}
+#top_logo>ul>li:nth-of-type(3){background:url(../images/iaea_icon.jpg) no-repeat;}
+#nav{width:100%; background:url(../images/navi_bg.jpg) no-repeat center top; margin-left:0; margin-top:0; margin-right:0; margin-bottom:0;}
+#nav>ul:after{content:''; display: block; clear: both;}
+#nav>ul{width:1200px; height:85px; margin:0 auto;}
+#nav>ul>li>a{box-sizing: border-box; width:240px; height:85px; float:left; text-align: center; line-height: 85px; display: block; border-right:1px solid #a7aeb1; color:#fff; font-size:16px; transition: 0.3s all; }
+#nav>ul>li>a:hover{letter-spacing: 2px; }
+#nav>ul>li:first-child a{border-left:1px solid #a7aeb1;}
+#nav>ul>li:nth-of-type(2) a{line-height:25px; padding-top:20px;}
+#nav>ul>li:nth-of-type(4) a{line-height:25px; padding-top:20px;}

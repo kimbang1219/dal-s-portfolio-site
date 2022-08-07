@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GGMT2019</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script  src="../../js/script2.js" type="text/javascript"></script>
+<script type="text/javascript">   
+$(document).ready( function() { 
+$("#header").load("../inc/header02.html"); 
+$("#footer").load("../inc/footer.html");
+}); 
+</script>
+
+<?php
+require_once('../../function/basic.php');
+require_once('../../function/config.php');
+echoheader();
+?>
+
+<link rel="stylesheet" type="text/css" href="../css/default.css">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+		</div><!--header-->
+        <div class="sub sub05">
+            <div class="sub_txt_bg">
+                <div class="sub_txt_box">
+                    <P>Registration Complete</P>
+                </div>
+            </div>
+        </div>
+
+
+<div class="container theme-showcase">
+	<form name="member_form" method="POST" onsubmit="member_form_check(); return false;" >
+	<input type="hidden" name="mode" value="write">
+	<input type="hidden" name="go_url" value="/ggmt2019/index.html">
+	<!-- È¸¿ø°¡ÀÔ ÄÁÅÙÃ÷ -->
+				<div class="signup_conts">			
+					<div class="parents_agree_sec">					
+						<h3 class="tit_lv2">Registration Complete</h3>
+						
+						 <div class="sub_content">
+				           <div id="sub02_txt_box01">         
+				            <ul>
+			                <li  style="height:150px;padding-top:50px;">Thank you so much. You can get the registration approval and denial information soon via your email.</li>
+				            </ul>
+				           </div> 
+			           </div> 
+							<div class="form_bottom">
+								<div class="btn_sec">						
+									 <input type="button" class="btn btn-md btn-success"   value="Confirm" onclick="location.href='/ggmt2019/'">
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			</div>
+
+				<div id="footer">
+		</div><!--footer-->
+			
+</body>
+</html>

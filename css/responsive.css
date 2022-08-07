@@ -894,6 +894,9 @@
         display: block;
     }
 
+    .featherlight .featherlight-close-icon{
+        right:0;
+    }
     /* contact */
 
     .contact {
